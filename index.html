@@ -3,6 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Explore T Levels in Digital Design Development and Production, a 2-year program combining classroom theory and practical learning.">
+    <meta name="keywords" content="T Levels, Digital Design, Education, UX Design">
     <title>T Levels in Digital Design Development and Production</title>
     <style>
         body {
@@ -13,7 +15,7 @@
             color: #333; /* Dark text color for readability */
         }
         .w3-container {
-            max-width: 1200px;
+            max-width: 1200px; /* Maximum width */
             margin: auto;
             padding: 20px;
         }
@@ -36,6 +38,8 @@
             border-radius: 10px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
             margin-top: 20px; /* Margin added for spacing */
+            width: 100%; /* Make image responsive */
+            height: auto; /* Maintain aspect ratio */
         }
         .w3-padding-32 {
             padding: 32px;
@@ -158,12 +162,34 @@
             border-radius: 5px;
             padding: 5px 10px;
         }
+        
+        /* Media Queries for Responsiveness */
+        @media (max-width: 768px) {
+            h4 {
+                font-size: 1.4em; /* Slightly smaller on smaller screens */
+            }
+            .w3-button {
+                width: 100%; /* Full width button on mobile */
+            }
+        }
+
+        @media (max-width: 480px) {
+            .info-content {
+                width: 95%; /* Adjust width for smaller screens */
+            }
+            footer h3 {
+                font-size: 1.2em; /* Adjust footer heading size */
+            }
+            footer p {
+                font-size: 0.8em; /* Adjust footer text size */
+            }
+        }
     </style>
 </head>
 <body>
     <div class="w3-container">
         <!-- Header Section with updated image -->
-        <img src="https://www.boltoncollege.ac.uk/assets/Uploads/Digital-Production-Design-Development-T-Level.jpg" alt="T Level Digital Design" class="w3-image" width="800" height="533">
+        <img src="https://www.boltoncollege.ac.uk/assets/Uploads/Digital-Production-Design-Development-T-Level.jpg" alt="T Level Digital Design showcasing digital production and design" class="w3-image" width="800" height="533">
         <div class="w3-padding-32">
             <h4><b>Passionate About Digital Innovation</b></h4>
             <h6><i>With a Focus on Education and Growth</i></h6>
@@ -184,8 +210,6 @@
             </div>
         </div>
 
-       
-
         <div class="w3-card">
             <div class="w3-container w3-padding">
                 <h4>Digital Design Trends</h4>
@@ -195,7 +219,6 @@
         </div>
     </div>
 
-  
     <hr>
     <!-- Footer -->
     <footer class="w3-row-padding">
@@ -229,19 +252,19 @@
 
     <!-- Information Modals -->
     <div class="info-container" id="info1">
-        <div class="info-content">
+        <div class="info-content" role="dialog" aria-labelledby="info1-label" aria-modal="true">
             <button class="info-close" onclick="closeInfo('info1')">Close</button>
-            <h4>Understanding T Levels</h4>
-            <img src="https://www.eastcoast.ac.uk/wp-content/uploads/2021/09/T-Level-Digital-scaled.jpg" alt="Understanding T Levels Image">
+            <h4 id="info1-label">Understanding T Levels</h4>
+            <img src="https://www.eastcoast.ac.uk/wp-content/uploads/2021/09/T-Level-Digital-scaled.jpg" alt="Overview of T Levels Image" loading="lazy">
             <p>T Levels are a new qualification designed to provide students with the skills and knowledge needed for careers in industries like digital design. They offer a mixture of classroom-based learning and practical experience, making them a valuable option for students aiming to enter the workforce directly or pursue further education.</p>
         </div>
     </div>
 
     <div class="info-container" id="info2">
-        <div class="info-content">
+        <div class="info-content" role="dialog" aria-labelledby="info2-label" aria-modal="true">
             <button class="info-close" onclick="closeInfo('info2')">Close</button>
-            <h4>Digital Design Trends</h4>
-            <img src="https://www.southdevon.ac.uk/wp-content/uploads/2021/02/Digital-design-T-Level-3-2-copy-scaled.jpg" alt="Digital Design Trends Image">
+            <h4 id="info2-label">Digital Design Trends</h4>
+            <img src="https://www.southdevon.ac.uk/wp-content/uploads/2021/02/Digital-design-T-Level-3-2-copy-scaled.jpg" alt="Digital Design Trends Image" loading="lazy">
             <p>The digital design field is continually evolving. Current trends emphasize user-centered design, accessibility, and the integration of artificial intelligence and machine learning in design processes. Staying updated with these trends is essential for anyone looking to excel in digital design.</p>
         </div>
     </div>
